@@ -1,6 +1,6 @@
 # GPT Todoist
 
-This is a Python script that generates a todo using OpenAI's GPT-3 language model and adds it to a Todoist account using the Todoist Python SDK. The due date for the task can be specified in a human-friendly format (e.g. "next Monday", "tomorrow").
+This is a command-line interface (CLI) script that generates a todo using OpenAI's GPT-3 language model and adds it to a Todoist account using the Todoist Python SDK. The due date for the task can be specified in a human-friendly format (e.g. "next Monday", "tomorrow").
 
 ## Requirements
 
@@ -13,7 +13,7 @@ Alternatively, you can install the required modules by running `pip3 install -r 
 
 ## Usage
 
-1. Clone this repository or download the `add_todo.py` file.
+1. Open a terminal and navigate to the directory where `add_todo.py` is located.
 2. Install the required modules using `pip3 install -r requirements.txt`.
 3. Create a `.env` file in the root of your project with your API keys:
 
@@ -25,6 +25,11 @@ Alternatively, you can install the required modules by running `pip3 install -r 
 4. Run the script using `python3 add_todo.py`.
 
 The script will generate a todo using GPT-3 and prompt you to enter a due date for the task in a human-friendly format (e.g. "next Monday", "tomorrow"). The task will be added to your Todoist account using the Todoist API.
+
+## To Do
+
+- [x] Create CLI
+- [ ] Create [Raycast extension](https://www.raycast.com/store)
 
 ## Configuration
 
