@@ -18,7 +18,10 @@ todoist_api = TodoistAPI(todoist_api_key)
 def generate_todo():
     today = datetime.today().strftime('%Y-%m-%d')
     print({today})
-    prompt = f"Today's date: {today}. I want you to act as a to-do list generator for building CryptoFounders. Your goal is to help members build in public and tokenize their product updates as NFTs. Generate a SMART task that aligns with this mission. Your task should be specific, measurable, achievable, relevant, and time-bound. What is one thing I should add to my to-do list to achieve this goal? Respond in one line. Include a human-defined task due date."
+    # prompt the user to enter a due date for the task
+    goal = input("Enter your goal: ")
+
+    prompt = f"Today's date: {today}. I want you to act as a to-do list generator. Generate a SMART task that aligns with my {goal}. What is one thing I should add to my to-do list to achieve this goal? Your task should be specific, measurable, achievable, relevant, and time-bound. Respond in one line and include a human-defined task due date."
     try:
         response = openai.Completion.create(engine="text-davinci-003", prompt=prompt, max_tokens=50)
         todo = response.choices[0].text.strip()
