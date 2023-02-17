@@ -24,12 +24,13 @@ Alternatively, you can install the required modules by running `pip3 install -r 
 
 4. Run the script using `python3 add_todo.py`.
 
-The script will generate a todo using GPT-3 and prompt you to enter a due date for the task in a human-friendly format (e.g. "next Monday", "tomorrow"). The task will be added to your Todoist account using the Todoist API.
+The script will generate a todo using GPT-3 and prompt you to enter a due date for the task in a human-friendly format (e.g. "next Monday", "tomorrow"). Note that currently, the due date must be entered manually by the user and is not extracted from OpenAI.
 
 ## To Do
 
 - [x] Create CLI
 - [ ] Create [Raycast extension](https://www.raycast.com/store)
+- [ ] Automatically extract due date from OpenAI
 
 ## Configuration
 
