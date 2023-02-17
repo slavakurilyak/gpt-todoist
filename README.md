@@ -37,4 +37,4 @@ You can customize the prompt used to generate the todo using ChatGPT by modifyin
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
